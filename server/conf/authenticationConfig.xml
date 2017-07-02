@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:loginConfiguration xmlns:tns="http://www.worklight.com/auth/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--
+	Copyright 2015 IBM Corp.
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+	-->
+
+	 <staticResources>
+
+		<resource id="subscribeServlet" securityTest="SubscribeServlet">
+			<urlPatterns>/subscribeSMS*;/receiveSMS*;/ussd*</urlPatterns>
+		</resource>
+
+	</staticResources>
+
+	 <securityTests>
+       	<customSecurityTest name="SubscribeServlet">
+       		<test realm="SubscribeServlet" isInternalUserID="true"/>
+       	</customSecurityTest>
+
+
+	 	<mobileSecurityTest name="mobileTests">
+			<testUser realm="cloudant" />
+			<testDeviceId provisioningType="none" />
+			<testDirectUpdate mode="perSession"/>
+	 	</mobileSecurityTest>
+	</securityTests>
+
+	<realms>
+		<realm name="cloudant" loginModule="CustomLoginModule">
+            <className>com.ibm.sample.wishlist.CustomAuthenticator</className>
+        </realm>
+
+		<realm name="SampleAppRealm" loginModule="StrongDummy">
+			<className>com.worklight.core.auth.ext.FormBasedAuthenticator</className>
+		</realm>
+
+		<realm name="SubscribeServlet" loginModule="rejectAll">
+			<className>com.worklight.core.auth.ext.HeaderAuthenticator</className>
+		</realm>
+	</realms>
+
+	<loginModules>
+		<loginModule name="CustomLoginModule">
+            <className>com.ibm.sample.wishlist.PropertiesFileLoginModule</className>
+        </loginModule>
+
+		<loginModule name="StrongDummy" expirationInSeconds="-1">
+			<className>com.worklight.core.auth.ext.NonValidatingLoginModule</className>
+		</loginModule>
+
+		<loginModule name="requireLogin" expirationInSeconds="-1">
+			<className>com.worklight.core.auth.ext.SingleIdentityLoginModule</className>
+		</loginModule>
+
+		<loginModule name="rejectAll">
+			<className>com.worklight.core.auth.ext.RejectingLoginModule</className>
+		</loginModule>
+
+	</loginModules>
+
+</tns:loginConfiguration>

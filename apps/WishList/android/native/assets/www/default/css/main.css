@@ -1,0 +1,236 @@
+
+/* Stylesheet content from css/main.css in folder common */
+/**
+* Copyright 2015 IBM Corp.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+.container {
+     width: 100%;
+     height: 100px;
+     margin: auto;
+     padding:0;
+     display: table;
+     border-bottom: 1px solid #DBD9D9;
+ }
+ 
+ .row  {
+     padding-top:5px;
+     display: table-row;
+ }
+ 
+ .left {
+     margin-top:10px;
+     width:10px;
+     display: table-cell;
+     padding-left:10px;
+     
+ }
+ 
+ .right {
+     width:30px;
+     display: table-cell;
+     vertical-align:middle;
+     padding-left:10px;
+ }
+ 
+ .middle {
+     display: table-cell;
+     margin:0;
+     padding-left:5px;
+     vertical-align: top;
+     
+ }
+ 
+ .middle div:first-child{
+     margin-top:10px;
+     padding-left:20px;
+     font-weight:bold;
+ }
+ 
+ .middle div:nth-child(2){
+     padding-left:20px;
+     margin-top:10px;
+ }
+ 
+ .middle div:nth-child(3){
+     padding-left:20px;
+     margin-top:10px;
+ }
+ 
+ div.left img{
+     width:100px;
+     margin:0;
+     padding:0;
+ }
+ 
+#catwrap {
+    width:100%;
+    margin:0 auto;
+}
+#left_col {
+    float:left;
+    width:50%;
+}
+#right_col {
+    float:right;
+    width:50%;
+}
+.appButton, input[type="text"] {
+width: 60%;
+height: 3em;
+font-size: 0.8em;
+margin: 10px auto 10px auto;
+background-color: #eee;
+}
+
+.appButton, input[type="password"] {
+width: 60%;
+height: 3em;
+font-size: 0.8em;
+margin: 10px auto 10px auto;
+background-color: #eee;
+}
+
+input[type="text"] {
+	width: 95%;
+}
+
+input[type="password"] {
+	width: 95%;
+}
+
+/* Json Div */
+
+#JsonDiv #container {
+	height: 60%;
+	margin-top: 0;
+	overflow: scroll;
+	display: block;
+	z-index: 1;
+	margin-top: 42px;
+	padding-bottom:20px;
+}
+#JsonDiv #consoleContainer {
+	background: #000;
+	height: 30%;
+	display: block;
+	color: #FFF;
+	z-index: 100;
+	max-height: 30%;
+	overflow-y: scroll;
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+#JsonDiv #console {
+	padding:10px;
+	font-family:monospace;
+	text-align:left;
+	white-space:pre-wrap;
+}
+
+a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+	margin: 0;
+	padding: 0;
+}
+
+#JsonDiv button {
+	width: 90%;
+	height: 3em;
+	font-size: 0.8em;
+	margin: 0.5em 0 0.2em 0;
+	background-color: #eee;
+	
+}
+
+#JsonDiv input {
+	width: 86%;
+	height: 6%;
+	font-size: 0.8em;
+	margin: 0.2em 0 0.2em 0;
+	text-align: center;
+	height: 2.5em;
+}
+
+table {
+	margin-top: 0.2em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	background-color:none;
+	padding: 4px;
+	border: 0px solid black;
+}
+
+td {
+	padding: 3px;
+	margin-bottom: 30px;
+	border: 1px solid #2F2F2F;
+}
+
+tr {
+	border: 1px solid #000;
+}
+
+.button-line-2 {
+	width: 45%;
+	font-size: 0.8em;
+	text-align: center;
+	display: inline-block;
+}
+
+.button-line-3 {
+	width: 29%;
+	font-size: 0.7em;
+	text-align: center;
+	display: inline-block;
+}
+
+.input-line-2 {
+	width: 40%;
+	font-size: 0.8em;
+	text-align: center;
+	display: inline-block;
+}
+
+.input-line-3 {
+	width: 25%;
+	font-size: 0.8em;
+	text-align: center;
+	display: inline-block;
+}
+
+
+
+/* Stylesheet content from css/main.css in folder android */
+/**
+* Copyright 2015 IBM Corp.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+
+/* this CSS file extends the application CSS file found under common\css */

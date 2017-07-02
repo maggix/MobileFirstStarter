@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Copyright 2015 IBM Corp.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+--><nativeIOSApp xmlns="http://www.worklight.com/native-ios-descriptor" bundleId="com.IOSWishList" id="IOSWishList" platformVersion="7.1.0.00.20170505-1403" version="1.0">
+
+	<displayName>IOSWishList</displayName>
+	<description>IOSWishList</description>
+	<accessTokenExpiration>10</accessTokenExpiration>
+	<userIdentityRealms>cloudant</userIdentityRealms>
+	<pushSender password="worklightdev"/>
+	<tags>
+		<tag>
+            <name>wishlist</name>
+        </tag>
+		<tag>
+            <name>nirvana</name>
+        </tag>
+	</tags>
+
+	<!--
+        Define the target category for generating ADRESSABLE DEVICE license reports
+        Possible values are 'UNDEFINED', 'B2E', 'B2C'
+     -->
+    <targetCategory>UNDEFINED</targetCategory>
+</nativeIOSApp>

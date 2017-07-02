@@ -1,0 +1,33 @@
+<!--
+Copyright 2015 IBM Corp.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<script>
+	$.getScript(path + "js/MainPage.js");
+    $("#plusButton").css("display","none");
+</script>
+<table border="0" style="width:100%;color:#ffffff;border:none">
+<tr>
+<td align="center" style="color:#ffffff;border:none;padding-top:24%;padding-bottom:22%">
+    <a href="#" id="LoadPage1Button" onclick="currentPage.loadPage(1);" style="font-size:1.3em; text-decoration:none;color:gray" > <img src="images/catalog_icon.png" /> <div>Catalog</div> </a>
+</td></tr>
+<tr>
+<td style="background-color:#EAEAEA;color:#ffffff;border:none;padding-top:24%;padding-bottom:24%" align="center">
+    <a href="#" id="LoadPage2Button" onclick="currentPage.loadPage(2);" style="font-size:1.3em; text-decoration:none;color:gray" > <img src="images/wishlist_icon.png" /> <div>Wishlist </div>
+    </a>
+</td></tr>
+</table>
+
+

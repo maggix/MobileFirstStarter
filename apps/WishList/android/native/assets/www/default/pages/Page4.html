@@ -1,0 +1,37 @@
+<!--
+Copyright 2015 IBM Corp.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+  {title: 'Galaxy s7 edge', store : 'chennai', price :680, image :'/images/gs6edge.png', productId :'00007'}
+  
+ -->
+ 
+<script>
+    $.getScript(path + "js/Page4.js");
+    $("#plusButton").css("display","none");
+</script>
+
+ <input style="margin-left:10px;width:85%" type="text" id="wlItemName" placeholder="Item name" />
+ <input style="margin-left:10px;width:85%" type="text" id="wlStoreName" placeholder="Store name" />
+ <input style="margin-left:10px;width:85%" type="text" id="wlPrice" placeholder="Price" />
+
+
+ <input style="margin-left:40%" type="button" class="formButton" value="Add Item" onclick="WLAddItem();" />
+ <input type="button" class="formButton" value="Cancel" onclick="currentPage.loadHome();"/>
+<br/>
+
+
+
+<div id="ResponseDiv"></div>
+
